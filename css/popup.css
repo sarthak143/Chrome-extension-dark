@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Hind+Madurai:100,300,400,500,700&subset=latin");
 
+:root {
+  --theme: #f9a731;
+}
+
 /*_____scrollbar________________________________________________________________________________________________________*/
 ::-webkit-scrollbar-button {
   background-repeat: no-repeat;
@@ -201,6 +205,10 @@ main .range-row input[type=range] {
   margin-bottom: 6px;
 }
 
+main .range-row input[type=range]::-webkit-slider-thumb {
+  background: var(--theme);
+}
+
 main .range-row .scale {
   display: flex;
   align-items: center;
@@ -274,7 +282,7 @@ input[type="checkbox"]+label:before {
   display: block;
   width: 20px;
   height: 20px;
-  border: 1px solid #6cc0e5;
+  border: 1px solid var(--theme);
   position: absolute;
   left: 0;
   top: 0;
@@ -310,7 +318,7 @@ input[type="checkbox"]:checked+label:before {
 }
 
 .ePNJxv>input:checked+.slider {
-  background-color: #282835;
+  background-color: var(--theme);
 }
 
 .cAnNTF {
